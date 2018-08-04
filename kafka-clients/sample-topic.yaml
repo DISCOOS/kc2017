@@ -8,6 +8,6 @@ metadata:
     kubecon: demo
 data:
   partitions: "20"
-  replication-factor: "2"
+  replication-factor: "1"
   properties: |
     retention.ms=1000000

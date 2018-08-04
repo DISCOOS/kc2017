@@ -30,9 +30,9 @@ items:
             value: "-Djava.security.auth.login.config=/opt/kafka/auth/kafka-client-jaas.conf"
           - name: USE_ACL
             value: "true"
-          image: nbogojevic/kafka-clients
+          image: discoos/kafka-clients
           imagePullPolicy: IfNotPresent
-          name: nbogojevic-kafka-clients
+          name: discoos-kafka-clients
           securityContext:
             privileged: false
           volumeMounts:        
@@ -70,9 +70,9 @@ items:
             value: "-Djava.security.auth.login.config=/opt/kafka/auth/kafka-client-jaas.conf"
           - name: USE_ACL
             value: "true"
-          image: nbogojevic/kafka-clients
+          image: discoos/kafka-clients
           imagePullPolicy: IfNotPresent
-          name: nbogojevic-kafka-clients
+          name: discoos-kafka-clients
           securityContext:
             privileged: false
           volumeMounts:        

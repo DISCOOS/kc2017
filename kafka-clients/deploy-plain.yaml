@@ -26,9 +26,9 @@ items:
         - env:
           - name: JAVA_MAIN_CLASS
             value: nb.kubecon.KafkaProducerSample
-          image: nbogojevic/kafka-clients
+          image: discoos/kafka-clients
           imagePullPolicy: IfNotPresent
-          name: nbogojevic-kafka-clients
+          name: discoos-kafka-clients
           securityContext:
             privileged: false
 - apiVersion: extensions/v1beta1
@@ -55,8 +55,8 @@ items:
         - env:
           - name: JAVA_MAIN_CLASS
             value: nb.kubecon.KafkaConsumerSample
-          image: nbogojevic/kafka-clients
+          image: discoos/kafka-clients
           imagePullPolicy: IfNotPresent
-          name: nbogojevic-kafka-clients
+          name: discoos-kafka-clients
           securityContext:
             privileged: false
